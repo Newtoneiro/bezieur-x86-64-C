@@ -4,7 +4,7 @@ ASMBIN=nasm
 
 CFLAGS= -m64 -Wall
 
-LDFLAGS=-L/usr/lib -lallegro -lallegro_primitives -lm
+LDFLAGS=-L/usr/lib -lallegro -lallegro_primitives -lallegro_image -lm
 
 INCLUDE=-I. -I/usr/local/include/allegro5/
 

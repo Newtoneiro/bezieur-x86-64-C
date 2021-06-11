@@ -3,23 +3,65 @@
     ; xmm3 - register for holding ingridients of result
     ; xmm4 - register for holding and adding ingridients from xmm3
     ; xmm5 - register holding (1-t)
+    ; xmm6 - register holding jump parameter
+    ; xmm8 - current t
     ; r11  - constant 1
     ; r12  - register designated for holding current power of components in loop
+
 
     bits    64
     section    .text
 
-    global  f
+    global put_pixel
+    global f
 f:
     push    rbp          ;epilogue
     mov     rbp, rsp
 
-    movss   xmm6, xmm0   ;store t parameter
+    xorps xmm8, xmm8     ;set t = 0
+    movss   xmm6, xmm0   ;store jump parameter
     mov     r11, 1
-    cvtsi2ss xmm5, r11
-    subss   xmm5, xmm0   ;store (1-t)
+    ;cvtsi2ss xmm5, r11
+    ;subss   xmm5, xmm0   ;store (1-t)
+    mov r14, 0
+    jmp bezieur_loop
 
-start_bezieur:
+store_x_coordinates:
+    push    rbp
+    mov     rbp, rsp
+
+    mov edi, [rax]
+    mov esi, [rax + 8]
+    mov edx, [rax + 16]
+    mov ecx, [rax + 24]
+    mov r8d, [rax + 32]
+
+    mov     rsp, rbp
+    pop     rbp
+    ret
+store_y_coordinates:
+    push    rbp
+    mov     rbp, rsp
+
+    mov edi, [rax + 4]
+    mov esi, [rax + 12]
+    mov edx, [rax + 20]
+    mov ecx, [rax + 28]
+    mov r8d, [rax + 36]
+
+    mov     rsp, rbp
+    pop     rbp
+    ret
+
+bezieur_loop:
+    cvtsi2ss xmm15, r11
+    ucomiss xmm8, xmm15
+    jg end
+    inc r14;
+    addss xmm8, xmm6
+    jmp bezieur_loop
+
+calc_bezieur: ; arguments in rdi, rsi, rdx, rcx, r8
     mov     r12, 4
     xorps   xmm3, xmm3
 
@@ -107,6 +149,7 @@ power_end:
     ret
 
 end:
+    mov     rax, r14
     mov     rsp, rbp
     pop     rbp
     ret

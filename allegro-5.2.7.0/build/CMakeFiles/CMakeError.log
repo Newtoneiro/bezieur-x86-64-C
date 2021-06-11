@@ -1,0 +1,443 @@
+Determining if files soundcard.h exist failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4ea86/fast && /usr/bin/make -f CMakeFiles/cmTC_4ea86.dir/build.make CMakeFiles/cmTC_4ea86.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4ea86.dir/ALLEGRO_HAVE_SOUNDCARD_H.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_4ea86.dir/ALLEGRO_HAVE_SOUNDCARD_H.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_SOUNDCARD_H.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_SOUNDCARD_H.c:2:10: fatal error: soundcard.h: No such file or directory
+    2 | #include <soundcard.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_4ea86.dir/build.make:66: CMakeFiles/cmTC_4ea86.dir/ALLEGRO_HAVE_SOUNDCARD_H.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4ea86/fast] Error 2
+
+
+Source:
+/* */
+#include <soundcard.h>
+
+
+int main(void){return 0;}
+
+Determining if files machine/soundcard.h exist failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_16ace/fast && /usr/bin/make -f CMakeFiles/cmTC_16ace.dir/build.make CMakeFiles/cmTC_16ace.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16ace.dir/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_16ace.dir/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c:2:10: fatal error: machine/soundcard.h: No such file or directory
+    2 | #include <machine/soundcard.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_16ace.dir/build.make:66: CMakeFiles/cmTC_16ace.dir/ALLEGRO_HAVE_MACHINE_SOUNDCARD_H.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_16ace/fast] Error 2
+
+
+Source:
+/* */
+#include <machine/soundcard.h>
+
+
+int main(void){return 0;}
+
+Determining if files libkern/OSAtomic.h exist failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e0c78/fast && /usr/bin/make -f CMakeFiles/cmTC_e0c78.dir/build.make CMakeFiles/cmTC_e0c78.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e0c78.dir/ALLEGRO_HAVE_OSATOMIC_H.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_e0c78.dir/ALLEGRO_HAVE_OSATOMIC_H.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_OSATOMIC_H.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_OSATOMIC_H.c:2:10: fatal error: libkern/OSAtomic.h: No such file or directory
+    2 | #include <libkern/OSAtomic.h>
+      |          ^~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e0c78.dir/build.make:66: CMakeFiles/cmTC_e0c78.dir/ALLEGRO_HAVE_OSATOMIC_H.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e0c78/fast] Error 2
+
+
+Source:
+/* */
+#include <libkern/OSAtomic.h>
+
+
+int main(void){return 0;}
+
+Determining if files sal.h exist failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_acd88/fast && /usr/bin/make -f CMakeFiles/cmTC_acd88.dir/build.make CMakeFiles/cmTC_acd88.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acd88.dir/ALLEGRO_HAVE_SAL_H.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_acd88.dir/ALLEGRO_HAVE_SAL_H.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_SAL_H.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CheckIncludeFiles/ALLEGRO_HAVE_SAL_H.c:2:10: fatal error: sal.h: No such file or directory
+    2 | #include <sal.h>
+      |          ^~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_acd88.dir/build.make:66: CMakeFiles/cmTC_acd88.dir/ALLEGRO_HAVE_SAL_H.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_acd88/fast] Error 2
+
+
+Source:
+/* */
+#include <sal.h>
+
+
+int main(void){return 0;}
+
+Determining if the function getexecname exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e6cc2/fast && /usr/bin/make -f CMakeFiles/cmTC_e6cc2.dir/build.make CMakeFiles/cmTC_e6cc2.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6cc2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=getexecname   -o CMakeFiles/cmTC_e6cc2.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e6cc2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6cc2.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=getexecname    -rdynamic CMakeFiles/cmTC_e6cc2.dir/CheckFunctionExists.c.o  -o cmTC_e6cc2 
+/usr/bin/ld: CMakeFiles/cmTC_e6cc2.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `getexecname'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e6cc2.dir/build.make:87: cmTC_e6cc2] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e6cc2/fast] Error 2
+
+
+
+Determining if the function strerror_s exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a05f9/fast && /usr/bin/make -f CMakeFiles/cmTC_a05f9.dir/build.make CMakeFiles/cmTC_a05f9.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a05f9.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=strerror_s   -o CMakeFiles/cmTC_a05f9.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a05f9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a05f9.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=strerror_s    -rdynamic CMakeFiles/cmTC_a05f9.dir/CheckFunctionExists.c.o  -o cmTC_a05f9 
+/usr/bin/ld: CMakeFiles/cmTC_a05f9.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `strerror_s'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_a05f9.dir/build.make:87: cmTC_a05f9] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a05f9/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test ALLEGRO_HAVE_PROCFS_ARGCV failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8ef14/fast && /usr/bin/make -f CMakeFiles/cmTC_8ef14.dir/build.make CMakeFiles/cmTC_8ef14.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8ef14.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DALLEGRO_HAVE_PROCFS_ARGCV   -o CMakeFiles/cmTC_8ef14.dir/src.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:4:25: error: storage size of ‘psinfo’ isn’t known
+    4 |         struct prpsinfo psinfo;
+      |                         ^~~~~~
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:4:25: warning: unused variable ‘psinfo’ [-Wunused-variable]
+make[1]: *** [CMakeFiles/cmTC_8ef14.dir/build.make:66: CMakeFiles/cmTC_8ef14.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_8ef14/fast] Error 2
+
+
+Source file was:
+
+    #include <sys/procfs.h>
+    int main(void) {
+        struct prpsinfo psinfo;
+        psinfo.pr_argc = 0;
+        return 0;
+    }
+Performing C SOURCE FILE Test ALLEGRO_HAVE_SV_PROCFS_H failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_83367/fast && /usr/bin/make -f CMakeFiles/cmTC_83367.dir/build.make CMakeFiles/cmTC_83367.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_83367.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DALLEGRO_HAVE_SV_PROCFS_H   -o CMakeFiles/cmTC_83367.dir/src.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:5:25: error: storage size of ‘psinfo’ isn’t known
+    5 |         struct prpsinfo psinfo;
+      |                         ^~~~~~
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:6:18: error: ‘PIOCPSINFO’ undeclared (first use in this function)
+    6 |         ioctl(0, PIOCPSINFO, &psinfo);
+      |                  ^~~~~~~~~~
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:6:18: note: each undeclared identifier is reported only once for each function it appears in
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:5:25: warning: unused variable ‘psinfo’ [-Wunused-variable]
+    5 |         struct prpsinfo psinfo;
+      |                         ^~~~~~
+make[1]: *** [CMakeFiles/cmTC_83367.dir/build.make:66: CMakeFiles/cmTC_83367.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_83367/fast] Error 2
+
+
+Source file was:
+
+    #include <sys/procfs.h>
+    #include <sys/ioctl.h>
+    int main(void) {
+        struct prpsinfo psinfo;
+        ioctl(0, PIOCPSINFO, &psinfo);
+        return 0;
+    }
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e4663/fast && /usr/bin/make -f CMakeFiles/cmTC_e4663.dir/build.make CMakeFiles/cmTC_e4663.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e4663.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_e4663.dir/src.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:3:7: warning: no previous prototype for ‘test_func’ [-Wmissing-prototypes]
+    3 | void* test_func(void* data)
+      |       ^~~~~~~~~
+Linking C executable cmTC_e4663
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e4663.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e4663.dir/src.c.o  -o cmTC_e4663 
+/usr/bin/ld: CMakeFiles/cmTC_e4663.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e4663.dir/build.make:87: cmTC_e4663] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e4663/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_eecc8/fast && /usr/bin/make -f CMakeFiles/cmTC_eecc8.dir/build.make CMakeFiles/cmTC_eecc8.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eecc8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_eecc8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eecc8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eecc8.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_eecc8.dir/CheckFunctionExists.c.o  -o cmTC_eecc8  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_eecc8.dir/build.make:87: cmTC_eecc8] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_eecc8/fast] Error 2
+
+
+
+Determining if the function XpmCreatePixmapFromData exists in the Xpm failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_dbbbe/fast && /usr/bin/make -f CMakeFiles/cmTC_dbbbe.dir/build.make CMakeFiles/cmTC_dbbbe.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dbbbe.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XpmCreatePixmapFromData   -o CMakeFiles/cmTC_dbbbe.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dbbbe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbbbe.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XpmCreatePixmapFromData    -rdynamic CMakeFiles/cmTC_dbbbe.dir/CheckFunctionExists.c.o  -o cmTC_dbbbe  -lXpm /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+/usr/bin/ld: cannot find -lXpm
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_dbbbe.dir/build.make:91: cmTC_dbbbe] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_dbbbe/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/XInput2.h exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c2e7b/fast && /usr/bin/make -f CMakeFiles/cmTC_c2e7b.dir/build.make CMakeFiles/cmTC_c2e7b.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c2e7b.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_c2e7b.dir/CheckIncludeFile.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/XInput2.h: No such file or directory
+    1 | #include <X11/extensions/XInput2.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_c2e7b.dir/build.make:66: CMakeFiles/cmTC_c2e7b.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c2e7b/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test XINPUT2_COMPILES failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_20029/fast && /usr/bin/make -f CMakeFiles/cmTC_20029.dir/build.make CMakeFiles/cmTC_20029.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_20029.dir/src.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DXINPUT2_COMPILES   -o CMakeFiles/cmTC_20029.dir/src.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/src.c:2:18: fatal error: X11/extensions/XInput2.h: No such file or directory
+    2 |         #include <X11/extensions/XInput2.h>
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_20029.dir/build.make:66: CMakeFiles/cmTC_20029.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_20029/fast] Error 2
+
+
+Source file was:
+
+        #include <X11/extensions/XInput2.h>
+        int main(void) { (void)XI_TouchBegin; return 0; }
+Determining if the include file X11/extensions/xf86vmode.h exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1dcc7/fast && /usr/bin/make -f CMakeFiles/cmTC_1dcc7.dir/build.make CMakeFiles/cmTC_1dcc7.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1dcc7.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_1dcc7.dir/CheckIncludeFile.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/xf86vmode.h: No such file or directory
+    1 | #include <X11/extensions/xf86vmode.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_1dcc7.dir/build.make:66: CMakeFiles/cmTC_1dcc7.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_1dcc7/fast] Error 2
+
+
+
+Determining if the function XF86VidModeQueryExtension exists in the Xxf86vm failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f3ff6/fast && /usr/bin/make -f CMakeFiles/cmTC_f3ff6.dir/build.make CMakeFiles/cmTC_f3ff6.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3ff6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XF86VidModeQueryExtension   -o CMakeFiles/cmTC_f3ff6.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f3ff6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3ff6.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XF86VidModeQueryExtension    -rdynamic CMakeFiles/cmTC_f3ff6.dir/CheckFunctionExists.c.o  -o cmTC_f3ff6  -lXxf86vm /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+/usr/bin/ld: cannot find -lXxf86vm
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_f3ff6.dir/build.make:91: cmTC_f3ff6] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f3ff6/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xinerama.h exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_23f68/fast && /usr/bin/make -f CMakeFiles/cmTC_23f68.dir/build.make CMakeFiles/cmTC_23f68.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_23f68.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_23f68.dir/CheckIncludeFile.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xinerama.h: No such file or directory
+    1 | #include <X11/extensions/Xinerama.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_23f68.dir/build.make:66: CMakeFiles/cmTC_23f68.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_23f68/fast] Error 2
+
+
+
+Determining if the function XineramaQueryExtension exists in the Xinerama failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e07df/fast && /usr/bin/make -f CMakeFiles/cmTC_e07df.dir/build.make CMakeFiles/cmTC_e07df.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e07df.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XineramaQueryExtension   -o CMakeFiles/cmTC_e07df.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e07df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e07df.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XineramaQueryExtension    -rdynamic CMakeFiles/cmTC_e07df.dir/CheckFunctionExists.c.o  -o cmTC_e07df  -lXinerama /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+/usr/bin/ld: cannot find -lXinerama
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e07df.dir/build.make:91: cmTC_e07df] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e07df/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/Xrandr.h exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e303b/fast && /usr/bin/make -f CMakeFiles/cmTC_e303b.dir/build.make CMakeFiles/cmTC_e303b.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e303b.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_e303b.dir/CheckIncludeFile.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/Xrandr.h: No such file or directory
+    1 | #include <X11/extensions/Xrandr.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_e303b.dir/build.make:66: CMakeFiles/cmTC_e303b.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e303b/fast] Error 2
+
+
+
+Determining if the function XRRQueryExtension exists in the Xrandr failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_bb425/fast && /usr/bin/make -f CMakeFiles/cmTC_bb425.dir/build.make CMakeFiles/cmTC_bb425.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bb425.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XRRQueryExtension   -o CMakeFiles/cmTC_bb425.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_bb425
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bb425.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XRRQueryExtension    -rdynamic CMakeFiles/cmTC_bb425.dir/CheckFunctionExists.c.o  -o cmTC_bb425  -lXrandr /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+/usr/bin/ld: cannot find -lXrandr
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_bb425.dir/build.make:91: cmTC_bb425] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_bb425/fast] Error 2
+
+
+
+Determining if the include file X11/extensions/scrnsaver.h exists failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_cc94a/fast && /usr/bin/make -f CMakeFiles/cmTC_cc94a.dir/build.make CMakeFiles/cmTC_cc94a.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc94a.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes    -o CMakeFiles/cmTC_cc94a.dir/CheckIncludeFile.c.o   -c /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:10: fatal error: X11/extensions/scrnsaver.h: No such file or directory
+    1 | #include <X11/extensions/scrnsaver.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_cc94a.dir/build.make:66: CMakeFiles/cmTC_cc94a.dir/CheckIncludeFile.c.o] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_cc94a/fast] Error 2
+
+
+
+Determining if the function XScreenSaverQueryExtension exists in the Xss failed with the following output:
+Change Dir: /home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e8714/fast && /usr/bin/make -f CMakeFiles/cmTC_e8714.dir/build.make CMakeFiles/cmTC_e8714.dir/build
+make[1]: Entering directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e8714.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XScreenSaverQueryExtension   -o CMakeFiles/cmTC_e8714.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e8714
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e8714.dir/link.txt --verbose=1
+/usr/bin/cc  -msse -W -Wall -Wpointer-arith -Wmissing-declarations -Wstrict-prototypes -Wmissing-prototypes -DCHECK_FUNCTION_EXISTS=XScreenSaverQueryExtension    -rdynamic CMakeFiles/cmTC_e8714.dir/CheckFunctionExists.c.o  -o cmTC_e8714  -lXss /usr/lib/x86_64-linux-gnu/libSM.so /usr/lib/x86_64-linux-gnu/libICE.so /usr/lib/x86_64-linux-gnu/libX11.so /usr/lib/x86_64-linux-gnu/libXext.so 
+/usr/bin/ld: cannot find -lXss
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_e8714.dir/build.make:91: cmTC_e8714] Error 1
+make[1]: Leaving directory '/home/bartosz/Arko/allegro-5.2.7.0/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e8714/fast] Error 2
+
+
+

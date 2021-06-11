@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/skater.dir/src/anim.c.o"
+  "CMakeFiles/skater.dir/src/background_scroller.c.o"
+  "CMakeFiles/skater.dir/src/credits.c.o"
+  "CMakeFiles/skater.dir/src/fps.c.o"
+  "CMakeFiles/skater.dir/src/framework.c.o"
+  "CMakeFiles/skater.dir/src/game.c.o"
+  "CMakeFiles/skater.dir/src/gamepad.c.o"
+  "CMakeFiles/skater.dir/src/global.c.o"
+  "CMakeFiles/skater.dir/src/intro.c.o"
+  "CMakeFiles/skater.dir/src/keyboard.c.o"
+  "CMakeFiles/skater.dir/src/level.c.o"
+  "CMakeFiles/skater.dir/src/level_alloc.c.o"
+  "CMakeFiles/skater.dir/src/level_file.c.o"
+  "CMakeFiles/skater.dir/src/level_state.c.o"
+  "CMakeFiles/skater.dir/src/menu.c.o"
+  "CMakeFiles/skater.dir/src/menu_about.c.o"
+  "CMakeFiles/skater.dir/src/menu_controls.c.o"
+  "CMakeFiles/skater.dir/src/menu_graphics.c.o"
+  "CMakeFiles/skater.dir/src/menu_main.c.o"
+  "CMakeFiles/skater.dir/src/menu_misc.c.o"
+  "CMakeFiles/skater.dir/src/menu_options.c.o"
+  "CMakeFiles/skater.dir/src/menu_sound.c.o"
+  "CMakeFiles/skater.dir/src/menu_success.c.o"
+  "CMakeFiles/skater.dir/src/mouse.c.o"
+  "CMakeFiles/skater.dir/src/music.c.o"
+  "CMakeFiles/skater.dir/src/physics.c.o"
+  "CMakeFiles/skater.dir/src/quadtree.c.o"
+  "CMakeFiles/skater.dir/src/screenshot.c.o"
+  "CMakeFiles/skater.dir/src/skater.c.o"
+  "CMakeFiles/skater.dir/src/token.c.o"
+  "CMakeFiles/skater.dir/src/transition.c.o"
+  "CMakeFiles/skater.dir/src/vcontroller.c.o"
+  "skater"
+  "skater.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang C)
+  include(CMakeFiles/skater.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()
