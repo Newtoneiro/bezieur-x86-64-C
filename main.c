@@ -96,17 +96,10 @@ unsigned char *generate_empty_bitmap(unsigned int width, unsigned int height, si
     return bitmap;
 }
 
-void create_canvas()
-{
-    size_t bmp_size = 0;
-    unsigned char *bmp_buffer = generate_empty_bitmap(800, 800, &bmp_size);
-    write_bytes_to_bmp(bmp_buffer, bmp_size);
-}
-
 int main(int argc, char *argv[]) {
     if (argc < 2)
     {
-        jump = 0.5;
+        jump = 0.05;
     }
     else {
         jump = strtod(argv[1], NULL);
@@ -115,8 +108,9 @@ int main(int argc, char *argv[]) {
             exit(EXIT_FAILURE);
         }
     }
-    create_canvas();
-
+    size_t bmp_size = 0;
+    unsigned char *buffer = generate_empty_bitmap(800, 800, &bmp_size);
+    write_bytes_to_bmp(buffer, bmp_size);
     int pos_x, pos_y;
 
     al_init();
@@ -150,14 +144,9 @@ int main(int argc, char *argv[]) {
         }
         else if(ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
             if (points_registered == 12){
-//                for (int i = 2; i < 12; i += 2)
-//                {
-//                    printf("%d", points[i-2]);
-//                    printf(" ");
-//                    printf("%d", points[i-1]);
-//                    printf("\n");
-//                }
-                create_canvas();
+                buffer = generate_empty_bitmap(800, 800, &bmp_size);
+                write_bytes_to_bmp(buffer, bmp_size);
+                bitmap = al_load_bitmap("empty.bmp");
                 al_draw_bitmap(bitmap, 0, 0, 0);
                 points_registered = 2;
             }
@@ -171,7 +160,10 @@ int main(int argc, char *argv[]) {
             points_registered += 2;
             delay(0.2);
             if (points_registered == 12){
-                printf("%d", f(points, jump));
+                printf("%d", f(points, buffer, jump));
+                write_bytes_to_bmp(buffer, bmp_size);
+                bitmap = al_load_bitmap("empty.bmp");
+                al_draw_bitmap(bitmap, 0, 0, 0);
             }
         }
         al_flip_display();  //displaying the window (the buffer)
