@@ -1,3 +1,5 @@
+// ============ Includes =================
+
 #include <stdlib.h>
 #include <string.h>
 #include <stdio.h>
@@ -11,8 +13,11 @@
 
 #pragma pack(1)
 
+// ============ Constants ==============
 #define OUTPUT_FILE_NAME "empty.bmp"
 
+#define WIDTH 800
+#define HEIGHT 800
 #define BMP_HEADER_SIZE 54
 #define BMP_PIXEL_OFFSET 54
 #define BMP_PLANES 1
@@ -24,11 +29,13 @@
 
 float jump;
 
+// ---- I use delay while getting the mouse position in main loop ------
 void delay (unsigned int secs) {
     unsigned int retTime = time(0) + secs;   // Get finishing time.
     while (time(0) < retTime);               // Loop until it arrives.
 };
 
+// ---- Thats a structure which is helpful in passing image header into asm function ---
 typedef struct {
     unsigned char sig_0;
     unsigned char sig_1;
@@ -48,7 +55,8 @@ typedef struct {
     uint32_t important_colors;
 } BmpHeader;
 
-void write_bytes_to_bmp(unsigned  char *buffer, size_t size)
+// --------- Function for saving bmp_buffer into bmp_file -------
+void write_to_bmp(unsigned  char *buffer, size_t size)
 {
     FILE *file;
 
@@ -62,9 +70,10 @@ void write_bytes_to_bmp(unsigned  char *buffer, size_t size)
     fclose(file);
 }
 
+// ------- Generate empty bmp buffer (all black) ------------
 unsigned char *generate_empty_bitmap(unsigned int width, unsigned int height, size_t *output_size)
 {
-    unsigned int row_size = (width*3 + 3) & ~3; // possible padding
+    unsigned int row_size = (width*3 + 3) & ~3;    //possible padding
     *output_size = row_size * height + BMP_HEADER_SIZE;
     unsigned char *bitmap = (unsigned char *) malloc(*output_size);
 
@@ -96,10 +105,11 @@ unsigned char *generate_empty_bitmap(unsigned int width, unsigned int height, si
     return bitmap;
 }
 
+// --------- main ------------
 int main(int argc, char *argv[]) {
-    if (argc < 2)
+    if (argc < 2)    // If no argument was given, set the jump to default 0.01
     {
-        jump = 0.05;
+        jump = 0.01;
     }
     else {
         jump = strtod(argv[1], NULL);
@@ -108,32 +118,36 @@ int main(int argc, char *argv[]) {
             exit(EXIT_FAILURE);
         }
     }
+    // Create buffer and an empty .bmp file for displaying
     size_t bmp_size = 0;
     unsigned char *buffer = generate_empty_bitmap(800, 800, &bmp_size);
-    write_bytes_to_bmp(buffer, bmp_size);
+    write_to_bmp(buffer, bmp_size);
     int pos_x, pos_y;
 
+    // initializing allegro stuff
     al_init();
     al_init_image_addon();
     al_init_primitives_addon();
     al_install_mouse();
 
+    // creating allegro stuff
     ALLEGRO_DISPLAY  *display = NULL;
     ALLEGRO_BITMAP *bitmap = NULL;
     ALLEGRO_EVENT_QUEUE *event_queue = NULL;
 
+    // variables and constants aswell as point list
     bool done = false;
     const int cols = 5 * 2;
     int points[cols];
     int points_registered = 2;
 
-    display = al_create_display(800, 800); //creating a window,
-    bitmap = al_load_bitmap("empty.bmp");
-    event_queue = al_create_event_queue();
+    display = al_create_display(WIDTH, HEIGHT); //creating a window,
+    bitmap = al_load_bitmap(OUTPUT_FILE_NAME); //loading bitmap
+    event_queue = al_create_event_queue();     //create event_queue
     al_register_event_source(event_queue, al_get_display_event_source(display));
     al_register_event_source(event_queue, al_get_mouse_event_source());
 
-    al_draw_bitmap(bitmap, 0, 0, 0);
+    al_draw_bitmap(bitmap, 0, 0, 0);// draw empty bitmap
     while (!done)
     {
         ALLEGRO_EVENT ev;
@@ -144,9 +158,9 @@ int main(int argc, char *argv[]) {
         }
         else if(ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
             if (points_registered == 12){
-                buffer = generate_empty_bitmap(800, 800, &bmp_size);
-                write_bytes_to_bmp(buffer, bmp_size);
-                bitmap = al_load_bitmap("empty.bmp");
+                buffer = generate_empty_bitmap(WIDTH, HEIGHT, &bmp_size);
+                write_to_bmp(buffer, bmp_size);
+                bitmap = al_load_bitmap(OUTPUT_FILE_NAME);
                 al_draw_bitmap(bitmap, 0, 0, 0);
                 points_registered = 2;
             }
@@ -155,15 +169,18 @@ int main(int argc, char *argv[]) {
             points[points_registered - 2] = pos_x;
             points[points_registered - 1] = pos_y;
 
-            al_draw_filled_circle(pos_x, pos_y, 2, al_map_rgb(50, 150, 50));
+            al_draw_filled_circle(pos_x, pos_y, 2, al_map_rgb(250, 150, 50)); // for clarity
 
             points_registered += 2;
             delay(0.2);
             if (points_registered == 12){
-                printf("%d", f(points, buffer, jump));
-                write_bytes_to_bmp(buffer, bmp_size);
-                bitmap = al_load_bitmap("empty.bmp");
+                f(points, buffer, jump);
+                write_to_bmp(buffer, bmp_size);
+                bitmap = al_load_bitmap(OUTPUT_FILE_NAME);
                 al_draw_bitmap(bitmap, 0, 0, 0);
+                for (int i = 0; i < 10; i += 2) {
+                    al_draw_filled_circle(points[i], points[i + 1], 2, al_map_rgb(250, 150, 50));
+                }
             }
         }
         al_flip_display();  //displaying the window (the buffer)
