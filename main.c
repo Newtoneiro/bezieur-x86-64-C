@@ -148,7 +148,6 @@ int main(int argc, char *argv[]) {
     al_register_event_source(event_queue, al_get_mouse_event_source());
 
     al_draw_bitmap(bitmap, 0, 0, 0);// draw empty bitmap
-    al_flip_display();  //displaying the window (the buffer)
     while (!done)
     {
         ALLEGRO_EVENT ev;
@@ -158,6 +157,7 @@ int main(int argc, char *argv[]) {
             done = true;
         }
         else if(ev.type == ALLEGRO_EVENT_MOUSE_BUTTON_DOWN) {
+            al_flip_display();  //displaying the window (the buffer)
             if (points_registered == 12){
                 buffer = generate_empty_bitmap(WIDTH, HEIGHT, &bmp_size);
                 write_to_bmp(buffer, bmp_size);
