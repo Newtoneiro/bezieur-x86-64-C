@@ -109,7 +109,7 @@ unsigned char *generate_empty_bitmap(unsigned int width, unsigned int height, si
 int main(int argc, char *argv[]) {
     if (argc < 2)    // If no argument was given, set the jump to default 0.01
     {
-        jump = 0.01;
+        jump = 0.005;
     }
     else {
         jump = strtod(argv[1], NULL);
@@ -148,6 +148,7 @@ int main(int argc, char *argv[]) {
     al_register_event_source(event_queue, al_get_mouse_event_source());
 
     al_draw_bitmap(bitmap, 0, 0, 0);// draw empty bitmap
+    al_flip_display();  //displaying the window (the buffer)
     while (!done)
     {
         ALLEGRO_EVENT ev;
@@ -163,6 +164,7 @@ int main(int argc, char *argv[]) {
                 bitmap = al_load_bitmap(OUTPUT_FILE_NAME);
                 al_draw_bitmap(bitmap, 0, 0, 0);
                 points_registered = 2;
+                al_flip_display();  //displaying the window (the buffer)
             }
             pos_x = ev.mouse.x;
             pos_y = ev.mouse.y;
@@ -182,8 +184,8 @@ int main(int argc, char *argv[]) {
                     al_draw_filled_circle(points[i], points[i + 1], 2, al_map_rgb(250, 150, 50));
                 }
             }
+            al_flip_display();  //displaying the window (the buffer)
         }
-        al_flip_display();  //displaying the window (the buffer)
     }
     al_destroy_display(display); //destroying the window
     return 0;
